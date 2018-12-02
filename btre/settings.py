@@ -148,3 +148,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER='tester7456@gmail.com'
 EMAIL_HOST_PASSWORD='drsweeper'
 EMAIL_USE_TLS=True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
